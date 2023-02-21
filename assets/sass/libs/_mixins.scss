@@ -1,0 +1,343 @@
+@mixin buttonCommon {
+  color: color(primary, white);
+  background: color(primary, pink);
+  font-family: font(Barlow, family);
+  font-weight: font(Barlow, weight-medium);
+  @include font-size(20);
+  border-radius: 30px;
+
+  padding: 0 55px;
+  display: inline-block;
+  @include lineheight(60);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  //@include radius(100px);
+  margin-top: 12px;
+  @include transition(all 500ms ease-in-out);
+  position: relative;
+
+  &:hover {
+    background: color(primary, white);
+    color: color(primary, pink);
+    border: 1px solid color(primary, pink);
+  }
+
+  @include breakpoint(ipad-landscape) {
+    @include font-size(16);
+    @include lineheight(50);
+    padding: 0 45px;
+  }
+
+  @include breakpoint(ipad-potrait) {
+    @include font-size(15);
+    @include lineheight(43);
+    padding: 0 38px;
+  }
+
+  @include breakpoint(mobile-potrait) {
+    @include font-size(14);
+    @include lineheight(43);
+    padding: 0 37px;
+  }
+}
+
+@mixin buttonCommon_2 {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00e9e0+0,0093fd+100 */
+  background: #00e9e0;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #00e9e0 0%, #0093fd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #00e9e0 0%, #0093fd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #00e9e0 0%, #0093fd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e9e0', endColorstr='#0093fd', GradientType=1);
+  /* IE6-9 */
+  color: color(primary, white);
+  font-family: font(Barlow, family);
+  font-weight: font(Barlow, weight-medium);
+  @include font-size(20);
+  border-radius: 30px;
+
+  padding: 0 58px;
+  display: inline-block;
+  @include lineheight(60);
+  border: 0px solid transparent;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  //@include radius(100px);
+  margin-top: 12px;
+  @include transition(all 500ms ease-in-out);
+  position: relative;
+
+  &:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0094fd+0,00e9e0+100 */
+    background: #0094fd;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0094fd 0%, #00e9e0 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #0094fd 0%, #00e9e0 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0094fd 0%, #00e9e0 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0094fd', endColorstr='#00e9e0', GradientType=0);
+    /* IE6-9 */
+  }
+
+  @include breakpoint(ipad-landscape) {
+    @include font-size(16);
+    @include lineheight(50);
+    padding: 0 45px;
+
+  }
+
+  @include breakpoint(ipad-potrait) {
+    @include font-size(15);
+    @include lineheight(43);
+    padding: 0 38px;
+  }
+
+  @include breakpoint(mobile-potrait) {
+    @include font-size(14);
+    @include lineheight(43);
+    padding: 0 37px;
+  }
+}
+
+@mixin header_2 {
+  @include font-size(70);
+  @include lineheight(62);
+  color: color(primary, headcolor);
+  font-family: font(Barlow, family);
+  font-weight: font(Barlow, weight-semibold);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+
+  @include breakpoint(laptop-small) {
+    @include font-size(45);
+    @include lineheight(50);
+  }
+
+  @include breakpoint(ipad-landscape) {
+    @include font-size(56);
+    @include lineheight(64);
+    margin-bottom: 7px;
+  }
+
+  @include breakpoint(ipad-potrait) {
+    @include font-size(50);
+    @include lineheight(48);
+    margin-bottom: 12px;
+  }
+
+  @include breakpoint(mobile-potrait) {
+    @include font-size(40);
+    @include lineheight(43);
+    margin-bottom: 10px;
+  }
+
+  // @include breakpoint(i-phone5-landscape) {
+  //   @include font-size(20);
+  //   @include lineheight(20);
+  //   margin-bottom: 10px;
+  // }
+}
+
+@mixin paragraph {
+  @include font-size(20);
+  @include lineheight(26);
+  color: color(primary, textcolor);
+  font-family: font(Roboto, family);
+  font-weight: font(Roboto, weight-regular);
+
+  @include breakpoint(ipad-landscape) {
+    @include font-size(16);
+    @include lineheight(26);
+
+  }
+
+  @include breakpoint(ipad-potrait) {
+    @include font-size(15);
+    @include lineheight(23);
+
+  }
+
+  @include breakpoint(mobile-potrait) {
+    @include font-size(13);
+    @include lineheight(19);
+
+  }
+
+  // @include breakpoint(i-phone5-landscape) {
+  //   @include font-size(13);
+  //   @include lineheight(16);
+  // }
+}
+
+/****** Transition ******/
+@mixin transition ($transition) {
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+/****** Shadow ******/
+@mixin shadow ($shadow) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+}
+
+/****** Transform ******/
+@mixin transform($transforms) {
+  transform: $transforms;
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  -o-transform: $transforms;
+}
+
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+
+@mixin rotate($rotate) {
+  @include transform(rotate($rotate));
+}
+
+/****** Radius ******/
+@mixin radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+/****** Flex ******/
+@mixin flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  -o-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  -ms-flex-align: $align;
+  -o-flex-align: $align;
+  align-items: $align;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  -o-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+@mixin flex($value) {
+  -webkit-flex: $value;
+  -moz-flex: $value;
+  -ms-flex: $value;
+  -o-flex: $value;
+  flex: $value;
+}
+
+/****** Lineheight ******/
+@mixin lineheight($linhight) {
+  line-height: $linhight + px;
+  line-height: (0.0625 * $linhight) + rem;
+}
+
+/****** Order ******/
+@mixin order($value) {
+  -webkit-order: $value;
+  -moz-order: $value;
+  -ms-order: $value;
+  -o-order: $value;
+  order: $value;
+}
+
+/****** Placeholder ******/
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+/****** Font Size ******/
+@mixin font($sizeValue: 12) {
+  font-size: $sizeValue + px;
+  font-size: (0.0625 * $sizeValue) + rem;
+}
+
+@mixin font-size($sizeValue: 12) {
+  @include font($sizeValue);
+}
+
+
+//------
+@mixin font-smoothing($value: on) {
+  @if $value ==on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+
+/****** Linear Gradient ******/
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction)==false {
+    $color-stops: $direction,
+    $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -moz-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -ms-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -o-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}

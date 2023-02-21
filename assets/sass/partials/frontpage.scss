@@ -1,0 +1,927 @@
+// Service Section start==========
+.service_info_section {
+    background: color(primary, lightwhite);
+
+    .container {
+        max-width: 1170px;
+        width: 100%;
+    }
+
+    .service_info_text_section {
+        text-align: center;
+        padding-top: 90px;
+
+        @include breakpoint(ipad-landscape) {
+            padding-top: 45px;
+        }
+
+        @include breakpoint(ipad-potrait) {
+            padding-top: 30px;
+
+        }
+
+        @include breakpoint(mobile-potrait) {
+            padding-top: 22px;
+        }
+
+        h2 {
+            @include header_2;
+        }
+
+        p {
+            @include paragraph;
+            margin-bottom: 60px;
+
+            @include breakpoint(ipad-landscape) {
+                @include font-size(20);
+                @include lineheight(26);
+                margin-bottom: 40px;
+            }
+
+            @include breakpoint(ipad-potrait) {
+                @include font-size(18);
+                @include lineheight(26);
+                margin-bottom: 35px;
+            }
+
+            @include breakpoint(mobile-potrait) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .service_info_details_section {
+        
+        .service_image_section {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                display: block;
+            }
+
+            .service_info_textwrap {
+                position: absolute;
+                bottom: 60px;
+                left: 0;
+                text-align: center;
+                width: 100%;
+                display: none;
+                z-index: 99;
+            }
+        }
+
+        h6 {
+            text-align: center;
+            font-family: font(Barlow, family);
+            font-weight: font(Barlow, weight-semibold);
+            @include font-size(30);
+            @include lineheight(31);
+            color: color(primary, headcolor);
+            margin-top: 25px;
+
+            @include breakpoint(ipad-landscape) {
+                @include font-size(23);
+                @include lineheight(22);
+                margin-top: 15px;
+            }
+
+            @include breakpoint(ipad-potrait) {
+                @include font-size(27);
+                @include lineheight(48);
+                margin: 0;
+            }
+
+            @include breakpoint(mobile-potrait) {
+                @include font-size(26);
+                @include lineheight(48);
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            .service_info_textwrap {
+                display: block;
+
+                p {
+                    color: color(primary, white);
+                    margin: 0;
+                    font-family: font(Barlow, family);
+                    font-weight: font(Barlow, weight-semibold);
+                    @include font-size(26);
+                    @include lineheight(40);
+                }
+
+                span {
+                    color: color(primary, white);
+                    font-family: font(Barlow, family);
+                    font-weight: font(Barlow, weight-regular);
+                    @include font-size(20);
+                    @include lineheight(20);
+                }
+            }
+
+            .service_image_section {
+                position: relative;
+                display: block;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    opacity: 0.7;
+                    border-radius: 15px;
+                    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#57bafd+0,57efeb+100 */
+                    background: #57bafd;
+                    /* Old browsers */
+                    background: -moz-linear-gradient(top, #57bafd 0%, #57efeb 100%);
+                    /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, #57bafd 0%, #57efeb 100%);
+                    /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, #57bafd 0%, #57efeb 100%);
+                    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57bafd', endColorstr='#57efeb', GradientType=0);
+                    /* IE6-9 */
+                }
+
+            }
+
+            h6 {
+                color: color(primary, skyblue);
+            }
+
+        }
+
+    }
+
+    .button_section {
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 90px;
+
+        .btn {
+            @include buttonCommon_2;
+        }
+
+        @include breakpoint(ipad-landscape) {
+            padding-top: 40px;
+            padding-bottom: 35px;
+        }
+
+        @include breakpoint(ipad-potrait) {
+            padding-top: 18px;
+            padding-bottom: 35px;
+        }
+
+        @include breakpoint(mobile-potrait) {
+            padding-top: 6px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+// Our Mision Section start==========
+.our_mission_info_section {
+    margin-top: 100px;
+
+    @include breakpoint(ipad-landscape) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(ipad-potrait) {
+        margin-top: 45px;
+    }
+
+
+    @include breakpoint(mobile-potrait) {
+        margin-top: 20px;
+    }
+
+    .container {
+        max-width: 1170px;
+        width: 100%
+    }
+
+    .our_mission_textSection {
+
+        h2 {
+            @include header_2;
+            margin-bottom: 30px
+        }
+
+        p {
+            @include paragraph;
+            font-weight: font(Roboto, weight-light);
+            @include font-size(18);
+            @include lineheight(27);
+            padding-right: 20px;
+            margin: 0 0 20px 0;
+
+            @include breakpoint(ipad-landscape) {
+                padding: 0;
+            }
+
+            @include breakpoint(ipad-potrait) {
+                padding: 0;
+                margin: 0 0 10px 0;
+            }
+
+            @include breakpoint(mobile-potrait) {
+                padding: 0;
+            }
+        }
+
+        .btn {
+            @include buttonCommon_2;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        @include breakpoint(mobile-potrait) {
+            margin-bottom: 23px;
+        }
+    }
+
+    .our_mission_imageSection {
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            padding-left: 15px;
+
+            @include breakpoint(ipad-landscape) {
+                padding: 0;
+            }
+
+            @include breakpoint(mobile-potrait) {
+                padding: 0;
+            }
+
+            @include breakpoint(ipad-potrait) {
+                padding: 0;
+            }
+        }
+    }
+
+}
+
+
+// Mision details Section start===================
+.mission_info_section {
+    margin-top: 100px;
+
+    @include breakpoint(ipad-landscape) {
+        margin-top: 52px;
+    }
+
+    @include breakpoint(ipad-potrait) {
+        margin-top: 45px;
+    }
+
+
+    @include breakpoint(mobile-potrait) {
+        margin-top: 35px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1170px;
+
+    }
+
+    .mission_details_section {
+        @include breakpoint(mobile-potrait) {
+            margin: 6px 0;
+        }
+
+        .mission_details_imageSection {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: #15d8cc;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99;
+                opacity: 0.8;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                display: block;
+                border-radius: 10px;
+            }
+
+            .mission_details_textsection {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                z-index: 999;
+
+                .mission_details_textwrap {
+                    h6 {
+                        font-family: font(Barlow, family);
+                        font-weight: font(Barlow, weight-semibold);
+                        color: color(primary, headcolor);
+                        @include font-size(45);
+                        @include lineheight(62);
+                        text-transform: uppercase;
+                        color: color(primary, white);
+
+                        @include breakpoint(ipad-landscape) {
+                            @include font-size(42);
+                            @include lineheight(52);
+                        }
+
+                        @include breakpoint(ipad-potrait) {
+                            @include font-size(33);
+                            @include lineheight(40);
+                        }
+
+                        @include breakpoint(mobile-potrait) {
+                            @include font-size(35);
+                            @include lineheight(37);
+
+                        }
+                    }
+
+                    .mission_info_buttonSec {
+                        text-align: center;
+
+                        a {
+                            @include buttonCommon;
+
+                            @include breakpoint(ipad-landscape) {
+                                @include font-size(16);
+                                @include lineheight(46);
+                                padding: 0 40px;
+                            }
+
+                            @include breakpoint(ipad-potrait) {
+                                @include font-size(13);
+                                @include lineheight(41);
+                                padding: 0 30px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &:nth-child(1) {
+            .mission_details_imageSection {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: color(primary, bluuue);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 99;
+                    opacity: 0.8;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            .mission_details_imageSection {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: color(primary, lightgreen);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 99;
+                    opacity: 0.8;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+        &:nth-child(3) {
+            .mission_details_imageSection {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: color(primary, pink);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 99;
+                    opacity: 0.8;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+
+// testimonial info Section start==========
+
+.testimonial_info_section {
+    margin-top: 100px;
+    background-image: url(../../images/testimonialBack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+        z-index: 1;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#15d8cc+0,027eda+98 */
+        background: #15d8cc;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #15d8cc 0%, #027eda 98%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #15d8cc 0%, #027eda 98%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #15d8cc 0%, #027eda 98%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15d8cc', endColorstr='#027eda', GradientType=1);
+        /* IE6-9 */
+    }
+
+    @include breakpoint(ipad-landscape) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(ipad-potrait) {
+        margin-top: 55px;
+    }
+
+    @include breakpoint(mobile-potrait) {
+        margin-top: 35px;
+    }
+
+    h2 {
+        @include header_2;
+        color: color(primary, white);
+        margin-top: 70px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 99;
+
+        @include breakpoint(ipad-landscape) {
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint(ipad-potrait) {
+            margin-top: 35px;
+            margin-bottom: 42px;
+        }
+
+        @include breakpoint(mobile-potrait) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .slider_section {
+        position: relative;
+
+        .container {
+            max-width: 1344px;
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 26%;
+            width: 100%;
+            z-index: 9;
+            background-color: color(primary, white);
+
+            @include breakpoint(mobile-potrait) {
+                bottom: -50px;
+                height: 60%;
+            }
+        }
+
+        .events_slider {
+            position: relative;
+            z-index: 99;
+
+            .events__boxes {
+                .card {
+                    margin: 0 16px;
+                    display: flex;
+                    align-items: center;
+
+                    border-radius: 25px;
+
+                    // box-shadow: 0px 0px 30px rgb(0 0 0 / 9%);
+                    .img_box {
+                        position: relative;
+                        padding-top: 60px;
+
+                        .pink_logo {
+                            position: absolute;
+                            left: 33px;
+                            bottom: -16px;
+                        }
+
+                        @include breakpoint(ipad-landscape) {
+                            padding-top: 50px;
+                        }
+
+                        @include breakpoint(ipad-potrait) {
+                            padding-top: 50px;
+                        }
+
+                        @include breakpoint(mobile-potrait) {
+                            padding-top: 42px;
+                        }
+                    }
+
+                    .card-body {
+                        padding: 40px 40px;
+
+                        @include breakpoint(ipad-landscape) {
+                            padding: 26px 34px;
+                        }
+
+                        @include breakpoint(ipad-potrait) {
+                            padding: 27px 27px;
+                        }
+
+                        @include breakpoint(mobile-potrait) {
+                            padding: 30px 26px;
+                        }
+
+                        p {
+                            text-align: center;
+                            margin-top: 25px;
+                            min-height: 125px;
+                            @include paragraph;
+                            @include font-size(17);
+                            @include lineheight(25);
+                            font-weight: font(Roboto, weight-light);
+
+                            @include breakpoint(ipad-landscape) {
+                                min-height: 156px;
+
+                            }
+
+                            @include breakpoint(ipad-potrait) {
+                                @include font-size(14);
+                                min-height: 115px;
+                            }
+
+                            @include breakpoint(mobile-potrait) {
+
+                                min-height: 74px;
+                            }
+                        }
+
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                            color: color(primary, pink);
+                            @include font-size(17);
+                            font-family: font(Barlow, family);
+                            font-weight: font(Barlow, weight-bold);
+                            text-transform: uppercase;
+
+                            @include breakpoint(ipad-potrait) {
+
+                                margin-top: 22px;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .fas {
+                width: 30px;
+                height: 30px;
+                @include font-size(26);
+                cursor: pointer;
+                color: color(primary, white);
+                background: transparent;
+                @include radius(50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: calc(45% - 15px);
+                z-index: 99;
+            }
+
+            .fa-arrow-left {
+                left: -2%;
+
+                @include breakpoint(ipad-landscape) {
+                    left: -2%;
+                }
+
+                @include breakpoint(ipad-potrait) {
+                    left: -2%;
+                }
+            }
+
+            .fa-arrow-right {
+                right: -2%;
+
+                @include breakpoint(ipad-landscape) {
+                    right: -2%;
+                }
+
+                @include breakpoint(ipad-potrait) {
+                    right: -2%;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// Latest News Section start==========
+.latest_news_section {
+    margin-top: 100px;
+
+    @include breakpoint(ipad-landscape) {
+        margin-top: 40px;
+    }
+
+    @include breakpoint(ipad-potrait) {
+
+        margin-top: 35px;
+    }
+
+    @include breakpoint(mobile-potrait) {
+
+        margin-top: 25px;
+    }
+
+    .latest_news_textSection {
+        text-align: center;
+
+        h2 {
+            @include header_2;
+        }
+
+        p {
+            @include paragraph;
+            margin: 0 0 35px 0;
+
+            @include breakpoint(mobile-potrait) {
+                margin: 0 0 20px 0;
+
+            }
+
+            br {
+                @include breakpoint(mobile-potrait) {
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+    .slider_section {
+        .latestNews_slider {
+            position: relative;
+
+            .events__boxes {
+                .card {
+
+
+                    display: flex;
+                    align-items: center;
+                    padding: 0 24px;
+                    border-radius: 25px;
+                    border: none;
+                    // box-shadow: 0px 0px 30px rgb(0 0 0 / 9%);
+
+                    .img_box {
+                        img {
+                            width: 100%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .card-body {
+                        padding: 27px 0;
+
+                        @include breakpoint(ipad-landscape) {
+                            padding: 22px 0 22px;
+                        }
+
+                        @include breakpoint(ipad-potrait) {
+                            padding: 27px 0 20px;
+                        }
+
+                        @include breakpoint(mobile-potrait) {
+                            padding: 22px 0 10px;
+                        }
+
+                        h6 {
+                            @include font-size(30);
+                            font-family: font(Barlow, family);
+                            font-weight: font(Barlow, weight-semibold);
+                            @include lineheight(35);
+
+                            margin-bottom: 10px;
+
+                            @include breakpoint(ipad-landscape) {
+                                @include font-size(25);
+                                @include lineheight(30);
+                                margin-top: 0;
+                            }
+
+
+                            @include breakpoint(ipad-potrait) {
+                                @include font-size(26);
+                                @include lineheight(28);
+                                margin-top: 0;
+
+                            }
+
+                            @include breakpoint(mobile-potrait) {
+                                @include font-size(19);
+                                @include lineheight(26);
+                                margin-top: 0px;
+                                margin-bottom: 8px;
+
+                            }
+
+                            br {
+                                @include breakpoint(mobile-potrait) {
+                                    display: none;
+
+                                }
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            @include paragraph;
+                            @include font-size(16);
+                            @include lineheight(24);
+
+                            @include breakpoint(ipad-potrait) {
+                                @include font-size(14);
+                                @include lineheight(23);
+
+                            }
+
+                            // @include breakpoint(ipad-landscape) {
+                            //     min-height: 156px;
+
+                            // }
+
+                            // @include breakpoint(ipad-potrait) {
+                            //     @include font-size(14);
+
+                            // }
+
+                            // @include breakpoint(mobile-potrait) {
+
+                            //     min-height: 74px;
+                            // }
+                        }
+                    }
+                }
+
+            }
+
+            .far {
+                width: 30px;
+                height: 30px;
+                @include font-size(58);
+
+                color: color(primary, arrowcolor);
+                background: transparent;
+                @include radius(50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: calc(29% - 15px);
+                z-index: 99;
+                cursor: pointer;
+            }
+
+            .fa-angle-left {
+                left: -4%;
+
+                @include breakpoint(ipad-landscape) {
+                    left: -1%;
+                }
+
+                @include breakpoint(ipad-potrait) {
+                    left: -1%;
+                }
+            }
+
+            .fa-angle-right {
+                right: -4%;
+
+                @include breakpoint(ipad-landscape) {
+                    right: -1%;
+                }
+
+                @include breakpoint(ipad-potrait) {
+                    right: -1%;
+                }
+            }
+
+
+        }
+    }
+
+    .buttonSection {
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 30px;
+
+        @include breakpoint(ipad-landscape) {
+            margin-bottom: 35px;
+        }
+
+        @include breakpoint(ipad-potrait) {
+            margin-bottom: 35px;
+
+        }
+
+        @include breakpoint(mobile-potrait) {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            @include buttonCommon;
+            padding: 0 60px;           
+        }
+
+        @include breakpoint(ipad-landscape) {
+            margin-top: 0;
+        }
+
+        @include breakpoint(ipad-potrait) {
+            margin-top: 0;
+
+        }
+    }
+}

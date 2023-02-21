@@ -1,0 +1,130 @@
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Font.
+$fonts: (
+  // baijamjuree: (
+    Barlow: (family: ('Barlow Condensed'),
+    weight-light: 300,
+    weight-regular: 400,
+    weight-medium : 500,
+    weight-semibold: 600,
+    weight-bold: 700,
+    weight-black: 900),
+
+
+
+    Roboto: (family: ('Roboto'),
+    weight-light: 300,
+    weight-regular: 400,
+    weight-medium : 500,
+    weight-semibold: 600,
+    weight-bold: 700)
+);
+// Palette.
+$colors: (
+  // nested map inception
+  primary: (white: #ffffff,
+    // smoke: #f1f1f1,
+    black: #000000,
+    lightblack: #262626,
+    
+    lightblue:#23589a,
+    errorcolor:#06070c,
+    navcolor:#072138,
+    pink:#ec2e66,
+    lightwhite:#f8f8f8,
+    bluuue:#0091fe,
+    lightgreen:#1bb6bb,
+    headcolor:#343434,
+    textcolor:#535353,
+    skyblue: #0093fd,
+    lightblackkkk:#888787,
+    footercolorlightblack:#343434,
+
+    arrowcolor:#adadad,
+ 
+
+
+
+
+    yellowww:#c9943d,
+    yellow:#f9b13e,
+    
+    footernavcolor:#567a9a,
+    head5color: #646464,
+    //lightgrey: #f7f7f7,
+    //blackrussian: #12162b,
+    //lightblackrussian:#1d223c,
+    //whitesmoke: #e6eaff,
+    //darkgreen: #295236,
+    //green: #99c24d,
+    //verydarkgreen: #3c560c,
+    //viridingreen: #86ac40,
+    // lightblue: #566095,
+    //orange: #c16200,
+    //blue__violet: #5665b6,
+
+
+    //blue: #179bd7, 
+    //ptext: #616161,
+    //darkgrey: #2d2d2d,
+    //grey: #ebebeb,
+    //bnrBlue:#09419f,
+    //titanWhite: #efeeff, 
+  ),
+  secondary: (deepblack: #040404,
+    lightblack: #1f2125,
+    gray: #7c7c7c,
+    lightSkyBlue: #96c0f5,
+    formBg: #0a213d,
+    formborder: #546478,
+    blue: #08a2ae,
+
+    //grey: #e1e1e1,
+    //smoke: #fafaff,
+    //darkgray: #828282,
+    //gray__61: #9c9c9c,
+    //lightgray: #c5c6e0,
+    //lavendermist: #dcddf6,
+    //menucolor: #28326c,
+    //lightblackrussian: #1c2763,
+    //darkgreen: #1c8c89,
+    //cardtext: #575757,
+    //featurebg: #252e6b,
+    //designation-name: #868889,
+    //full_time_bg: #e8ecff,
+    //blue_magenta: #a7a7a8,
+    //bodyBg_color: #fafafa,
+    //titanWhite: #e6eaff,
+    //jobSearch__placeholderColor: #7b7d8d,
+    //approx_zambezi: #585858,
+    //map_border_color: #bfbfc2,
+    //philippin_silver: #b2b2b3,
+  ),
+  button: (buttonColor: #ffffff,
+    buttonHover_bg: #23589a,
+
+
+    //bghover: #1c2763,
+    //icon_hover_color: #183153,
+    //lightBlue: #1C8C89,
+    //bg:#ea7600,
+    //border:	transparent,
+    //tweet_btn_color: #00aced,
+    //facebook_btn_color: #3b5998,
+    //linkdin_btn_color: #4875b4,
+    //email_btn_color: #999999,
+    //bghover:#000,
+  ),
+);
